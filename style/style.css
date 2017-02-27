@@ -1,0 +1,306 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@font-face {
+  font-family: 'BigJohn';
+  src: url('../fonts/BigJohn/BigJohn.eot?#iefix') format('embedded-opentype'),  
+	  url('../fonts/BigJohn/BigJohn.otf')  format('opentype'),   
+	  url('../fonts/BigJohn/BigJohn.woff') format('woff'), 
+	  url('../fonts/BigJohn/BigJohn.ttf')  format('truetype'), 
+	  url('../fonts/BigJohn/BigJohn.svg#BigJohn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SlimJoe';
+  src: url('../fonts/SlimJoe/SlimJoe.eot?#iefix') format('embedded-opentype'),  
+	  url('../fonts/SlimJoe/SlimJoe.otf')  format('opentype'),
+	  url('../fonts/SlimJoe/SlimJoe.woff') format('woff'), 
+	  url('../fonts/SlimJoe/SlimJoe.ttf')  format('truetype'), 
+	  url('../fonts/SlimJoe/SlimJoe.svg#SlimJoe') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	line-height: 1.56;
+	color: #fff;
+	background-color: #f9f9f9;
+}
+.button{
+	display: inline-block;
+	border: 2px solid #fff;
+	padding: 11px 20px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	transition: .2s ease-in;
+	transition-property: color, background-color; 
+}
+.button-green{
+	border-color: #48bf72 ;
+	color: #48bf72;
+}
+.button-green:hover{
+	background-color: #48bf72 ;
+	color: #FFF;
+}
+/*banner styles*/
+.banner {
+	background: #3c4955 url(../imeges/bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+.header {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 36px 0;
+}
+
+.logo, .navigation {
+	display: inline-block;
+	vertical-align: middle;
+}
+.navigation{
+	margin-left: 410px;
+}
+.navigation ul {
+	list-style: none;
+	font-size: 0px;
+	padding: 0;
+	vertical-align: middle;
+}
+.navigation ul li {
+	display: inline-block;
+	font-size: 16px;
+}
+.navigation ul li + li{
+	margin-left: 55px;
+}
+/*Крутая штука*/
+.navigation ul li + li:before{
+	content: '/';
+	padding-right: 45px;
+	opacity: .3;
+}
+.navigation ul li a{
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 5px;
+	border-bottom: 1px solid transparent; 
+	transition: border-color .2s ease-in;
+}
+.navigation ul li a:hover, 
+.navigation ul li a:active{
+	border-color: #fff
+}
+.banner-content {
+	width: 1140px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 124px 0 180px;
+}
+
+.site-title, .site-sub-title {
+	line-height: 1;
+	margin: 0;
+}
+.site-title{
+	font-family: BigJohn;
+	font-size: 46px;
+	padding-bottom: 15px;
+}
+.site-sub-title {
+	font-family: SlimJoe;
+	font-size: 30px;
+}
+.banner-content .button{
+	margin-top: 44px;
+}
+
+.portfolio-button {
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 42px auto 30px;
+	font-family: lato;
+	font-weight: 700;
+	font-size: 0px;
+}
+.portfolio-button li  {
+	display: inline-block;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	background-color: #eaeaea;
+	
+}
+.portfolio-button li+li{
+	margin-left: 14px;
+}
+.portfolio-button li a{
+	display: block;
+	padding:9px 15px 8px 15px;
+	border-radius: 2px;
+	text-decoration: none;
+	color: #3c4955;
+}
+.portfolio-button li a:focus{
+	background-color: #48bf72;
+	color: #fff;
+}
+.portfolio-img{
+	width: 1140px;
+	margin: 0 auto;
+}
+.combo-blokcs {
+	display: inline-block;
+	width: 450px;
+}
+.combo-blokcs1 {
+	display: inline-block;
+	width: 650px;
+}
+.img-block {
+	display: inline-block;
+	border-radius: 7px;
+}
+
+/*styls about blok1*/
+.img-block1 {
+	margin: 20px 20px 20px 0;
+	height: 300px;
+	width: 450px;
+	background: #48bf72 url(../imeges/item1.jpg) center center no-repeat;
+	background-size: cover;
+}
+.img-block1:hover{
+	background-image: none;
+}
+.img-block1-hov {
+	height: 100%;
+}
+.img-block1-hov:hover{
+	background: url(../imeges/item1.jpg) center center no-repeat;
+	background-size: cover;
+	opacity:.1;
+}
+/*end of blok2*/
+/*styls about blok2*/
+.img-block2 {
+	margin: 20px 0px 20px 40px;
+	width: 650px;
+	height: 435px;
+	background: #48bf72 url(../imeges/item2.jpg) center center no-repeat;
+	background-size: cover;
+}
+.img-block2:hover{
+	background-image: none;
+}
+.img-block2-hov {
+	height: 100%;
+}
+.img-block2-hov:hover{
+	background: url(../imeges/item2.jpg) center center no-repeat;
+	background-size: cover;
+	opacity:.1;
+}
+/*end of blok2*/
+
+/*styls about blok3*/
+.img-block3 {
+	margin: 20px 0px 20px 0;
+	height: 485px;
+	width: 450px;
+	background: #48bf72 url(../imeges/item3.jpg) center center no-repeat;
+	background-size: cover;
+}
+.img-block3:hover{
+	background-image: none;
+}
+.img-block3-hov {
+	height: 100%;
+}
+.img-block3-hov:hover{
+	background: url(../imeges/item3.jpg) center center no-repeat;
+	background-size: cover;
+	opacity:.1;
+	
+}
+/*end of blok3*/
+
+/*styls about blok4*/
+.img-block4 {
+	margin: 20px 0px 20px 40px;
+	width: 650px;
+	height: 350px;
+	background-color: rgb(72,191,114);
+	background: #48bf72 url(../imeges/item4.jpg) center center no-repeat;
+	background-size: cover;
+}
+.img-block4:hover {
+	background-image: none;
+	
+}
+.img-block4-hov {
+	height: 100%;
+}
+.img-block4-hov:hover {
+	background: url(../imeges/item4.jpg) center center no-repeat;
+	background-size: cover;
+	opacity:.1;
+}
+/*end of blok4*/
+.img-block4-hov, .img-block3-hov, .img-block2-hov, .img-block1-hov{
+	transition: .2s ease-in;
+	transition-property: opacity; 
+}
+
+
+
+.about-block {
+	height: 500px;
+	background: url(../imeges/portfolio-bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.text-about {
+	width: 1140px;	
+	margin: 0 auto;
+}
+.text-about div{
+	width: 420px;
+	padding-top: 90px;
+	margin-left: 588px;
+}
+.header-about h1{
+	font-weight: 700;
+	font-size: 30;
+	line-height: 1.02;
+	margin: 0;
+	padding-bottom: 7px;
+}
+.header-about h2{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.45;
+	margin: 0;
+}
+
+.button-dark{
+	margin-top: 40px;
+	border-color: #3c4955 ;
+	color: #3c4955;
+}
+.button-dark:hover{
+	background-color: #3c4955 ;
+	color: #FFF;
+}
