@@ -141,6 +141,7 @@ body{
 	text-decoration: none;
 	text-align: center;
 	background-color: #eaeaea;
+	cursor: pointer;
 	
 }
 .portfolio-button li+li{
@@ -156,6 +157,11 @@ body{
 .portfolio-button li a:focus{
 	background-color: #48bf72;
 	color: #fff;
+	transition: .2s ease-in;
+}
+.portfolio-button li a:hover{
+	background-color: #48bf72;
+	transition: .2s ease-in;
 }
 .portfolio-img{
 	width: 1140px;
@@ -172,6 +178,7 @@ body{
 .img-block {
 	display: inline-block;
 	border-radius: 7px;
+	cursor: pointer;
 }
 
 /*styls about blok1*/
@@ -303,4 +310,20 @@ body{
 .button-dark:hover{
 	background-color: #3c4955 ;
 	color: #FFF;
+}
+.footer {
+	height: 200px;
+	background-color: #3c4955;
+}
+.footer div{
+	width: 1140px;
+	margin: 0 auto;
+}
+.footer p{
+	width: 400px;
+	padding-top: 92px; 
+}
+.footer a{
+	text-decoration: none;
+	color:#fff;
 }
